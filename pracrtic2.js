@@ -15,7 +15,7 @@ for (let i = 0; i < 2; i++){
           b = prompt('На сколько щцените его?','');
 
 
-   if (a!=''&& b!= '' && a!= null && b!= null && a.length < 50){
+   if (a != null && b != null && a !='' && b != '' && a.length < 50){
 
     personalMovieDB.movies[a] = b ;
 
@@ -25,15 +25,15 @@ for (let i = 0; i < 2; i++){
         console.log("Error");
         i--;
     }
-}
+  }
 
-    if (personalMovieDB.count<10){
+    if (personalMovieDB.count < 10) {
         console.log("Просмотрено довольно мало фильмов");
     }
-    else if(personalMovieDB.count>10 && personalMovieDB.count<30){
+    else if(personalMovieDB.count >=10 && personalMovieDB.count<30){
         console.log("Вы классический зритель");
     }
-    else if(personalMovieDB.count>30){
+    else if(personalMovieDB.count>=30){
         console.log("Вы киноман");
 
     }else{
